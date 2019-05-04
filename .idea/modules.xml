@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/graphQLFuel_wordtradingdata.iml" filepath="$PROJECT_DIR$/.idea/modules/graphQLFuel_wordtradingdata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/graphQLFuel_wordtradingdata.main.iml" filepath="$PROJECT_DIR$/.idea/modules/graphQLFuel_wordtradingdata.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/graphQLFuel_wordtradingdata.test.iml" filepath="$PROJECT_DIR$/.idea/modules/graphQLFuel_wordtradingdata.test.iml" />
+    </modules>
+  </component>
+</project>
