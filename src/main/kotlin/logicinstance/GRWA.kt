@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service
 import java.lang.Math.abs
 import main.kotlin.pojo.MongoSchema.Node
 import main.kotlin.pojo.httpRtn.Chart.*
+import java.text.SimpleDateFormat
 import java.util.*
-import javax.sound.sampled.Line
 
 @Service
 class GRWA {
@@ -802,9 +802,9 @@ class GRWA {
     }
 
     fun genLineChartAfterOpen(valueStack:ValueStack) {
-        var lineChartDataDisperSrcPredictGRWARemainPcnt_Open = LineChartData(valueStack.rowValue.pinDate!!,valueStack.rowValue.disperSrcPredictGRWARemainPcnt)
-        var lineChartDataDisperSrcPredictGRWAMidPtPcnt_Open = LineChartData(valueStack.rowValue.pinDate!!,valueStack.rowValue.disperSrcPredictGRWAMidPtPcnt)
-        var lineChartDataDisperSrcPredictGRWAwithDeltaPcnt_Open = LineChartData(valueStack.rowValue.pinDate!!,valueStack.rowValue.disperSrcPredictGRWAwithDeltaPcnt)
+        var lineChartDataDisperSrcPredictGRWARemainPcnt_Open = LineChartData(DateUtils.toSimpleString(valueStack.rowValue.pinDate!!),valueStack.rowValue.disperSrcPredictGRWARemainPcnt)
+        var lineChartDataDisperSrcPredictGRWAMidPtPcnt_Open = LineChartData(DateUtils.toSimpleString(valueStack.rowValue.pinDate!!),valueStack.rowValue.disperSrcPredictGRWAMidPtPcnt)
+        var lineChartDataDisperSrcPredictGRWAwithDeltaPcnt_Open = LineChartData(DateUtils.toSimpleString(valueStack.rowValue.pinDate!!),valueStack.rowValue.disperSrcPredictGRWAwithDeltaPcnt)
 
         lineChart_Open_DisperSrcPredictGRWARemainPcnt.valueList.add(lineChartDataDisperSrcPredictGRWARemainPcnt_Open)
         lineChart_Open_DisperSrcPredictGRWAMidPtPcnt.valueList.add(lineChartDataDisperSrcPredictGRWAMidPtPcnt_Open)
@@ -815,17 +815,17 @@ class GRWA {
     fun genLineChartAfterClose(valueStackClose:ValueStack, valueStackHigh:ValueStack, valueStackLow:ValueStack) {
         logger.debug { "genLineChartAfterClose Start"}
         //------------Disperency Pcnt
-        var lineChartDataDisperSrcPredictGRWARemainPcnt_Close = LineChartData(valueStackClose.rowValue.pinDate!!,valueStackClose.rowValue.disperSrcPredictGRWARemainPcnt!!)
-        var lineChartDataDisperSrcPredictGRWAMidPtPcnt_Close = LineChartData(valueStackClose.rowValue.pinDate!!,valueStackClose.rowValue.disperSrcPredictGRWAMidPtPcnt!!)
-        var lineChartDataDisperSrcPredictGRWAwithDeltaPcnt_Close = LineChartData(valueStackClose.rowValue.pinDate!!,valueStackClose.rowValue.disperSrcPredictGRWAwithDeltaPcnt!!)
+        var lineChartDataDisperSrcPredictGRWARemainPcnt_Close = LineChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!),valueStackClose.rowValue.disperSrcPredictGRWARemainPcnt!!)
+        var lineChartDataDisperSrcPredictGRWAMidPtPcnt_Close = LineChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!),valueStackClose.rowValue.disperSrcPredictGRWAMidPtPcnt!!)
+        var lineChartDataDisperSrcPredictGRWAwithDeltaPcnt_Close = LineChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!),valueStackClose.rowValue.disperSrcPredictGRWAwithDeltaPcnt!!)
 
-        var lineChartDataDisperSrcPredictGRWARemainPcnt_High = LineChartData(valueStackHigh.rowValue.pinDate!!,valueStackHigh.rowValue.disperSrcPredictGRWARemainPcnt!!)
-        var lineChartDataDisperSrcPredictGRWAMidPtPcnt_High = LineChartData(valueStackHigh.rowValue.pinDate!!,valueStackHigh.rowValue.disperSrcPredictGRWAMidPtPcnt!!)
-        var lineChartDataDisperSrcPredictGRWAwithDeltaPcnt_High = LineChartData(valueStackHigh.rowValue.pinDate!!,valueStackHigh.rowValue.disperSrcPredictGRWAwithDeltaPcnt!!)
+        var lineChartDataDisperSrcPredictGRWARemainPcnt_High = LineChartData(DateUtils.toSimpleString(valueStackHigh.rowValue.pinDate!!),valueStackHigh.rowValue.disperSrcPredictGRWARemainPcnt!!)
+        var lineChartDataDisperSrcPredictGRWAMidPtPcnt_High = LineChartData(DateUtils.toSimpleString(valueStackHigh.rowValue.pinDate!!),valueStackHigh.rowValue.disperSrcPredictGRWAMidPtPcnt!!)
+        var lineChartDataDisperSrcPredictGRWAwithDeltaPcnt_High = LineChartData(DateUtils.toSimpleString(valueStackHigh.rowValue.pinDate!!),valueStackHigh.rowValue.disperSrcPredictGRWAwithDeltaPcnt!!)
 
-        var lineChartDataDisperSrcPredictGRWARemainPcnt_Low = LineChartData(valueStackLow.rowValue.pinDate!!,valueStackLow.rowValue.disperSrcPredictGRWARemainPcnt!!)
-        var lineChartDataDisperSrcPredictGRWAMidPtPcnt_Low = LineChartData(valueStackLow.rowValue.pinDate!!,valueStackLow.rowValue.disperSrcPredictGRWAMidPtPcnt!!)
-        var lineChartDataDisperSrcPredictGRWAwithDeltaPcnt_Low = LineChartData(valueStackLow.rowValue.pinDate!!,valueStackLow.rowValue.disperSrcPredictGRWAwithDeltaPcnt!!)
+        var lineChartDataDisperSrcPredictGRWARemainPcnt_Low = LineChartData(DateUtils.toSimpleString(valueStackLow.rowValue.pinDate!!),valueStackLow.rowValue.disperSrcPredictGRWARemainPcnt!!)
+        var lineChartDataDisperSrcPredictGRWAMidPtPcnt_Low = LineChartData(DateUtils.toSimpleString(valueStackLow.rowValue.pinDate!!),valueStackLow.rowValue.disperSrcPredictGRWAMidPtPcnt!!)
+        var lineChartDataDisperSrcPredictGRWAwithDeltaPcnt_Low = LineChartData(DateUtils.toSimpleString(valueStackLow.rowValue.pinDate!!),valueStackLow.rowValue.disperSrcPredictGRWAwithDeltaPcnt!!)
         logger.debug { "genLineChartAfterClose to add value to chart"}
         lineChart_Close_DisperSrcPredictGRWARemainPcnt.valueList.add(lineChartDataDisperSrcPredictGRWARemainPcnt_Close)
         lineChart_Close_DisperSrcPredictGRWAMidPtPcnt.valueList.add(lineChartDataDisperSrcPredictGRWAMidPtPcnt_Close)
@@ -843,11 +843,12 @@ class GRWA {
     }
 
     fun genCandleChartsAfterClose(valueStackOpen:ValueStack, valueStackClose:ValueStack, valueStackHigh:ValueStack, valueStackLow:ValueStack) {
-        var candleChartData_Src = CandleChartData(valueStackClose.rowValue.pinDate!!, valueStackOpen.rowValue.srcValue, valueStackClose.rowValue.srcValue, valueStackHigh.rowValue.srcValue, valueStackLow.rowValue.srcValue)
-        var candleChartData_GRWA= CandleChartData(valueStackClose.rowValue.pinDate!!, valueStackOpen.rowValue.GRWA, valueStackClose.rowValue.GRWA, valueStackHigh.rowValue.GRWA, valueStackLow.rowValue.GRWA)
-        var candleChartData_LastPredict7when6= CandleChartData(valueStackClose.rowValue.pinDate!!, valueStackOpen.lastPredict7when6, valueStackClose.lastPredict7when6, valueStackHigh.lastPredict7when6, valueStackLow.lastPredict7when6)
-        var candleChartData_LastPredict7when6MidPt= CandleChartData(valueStackClose.rowValue.pinDate!!, valueStackOpen.lastPredict7when6MidPt, valueStackClose.lastPredict7when6MidPt, valueStackHigh.lastPredict7when6MidPt, valueStackLow.lastPredict7when6MidPt)
-        var candleChartData_LastPredict7when6withDeltaGRWA= CandleChartData(valueStackClose.rowValue.pinDate!!, valueStackOpen.lastPredict7when6withDeltaGRWA, valueStackClose.lastPredict7when6withDeltaGRWA, valueStackHigh.lastPredict7when6withDeltaGRWA, valueStackLow.lastPredict7when6withDeltaGRWA)
+
+        var candleChartData_Src = CandleChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!), valueStackOpen.rowValue.srcValue, valueStackClose.rowValue.srcValue, valueStackHigh.rowValue.srcValue, valueStackLow.rowValue.srcValue)
+        var candleChartData_GRWA= CandleChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!), valueStackOpen.rowValue.GRWA, valueStackClose.rowValue.GRWA, valueStackHigh.rowValue.GRWA, valueStackLow.rowValue.GRWA)
+        var candleChartData_LastPredict7when6= CandleChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!), valueStackOpen.lastPredict7when6, valueStackClose.lastPredict7when6, valueStackHigh.lastPredict7when6, valueStackLow.lastPredict7when6)
+        var candleChartData_LastPredict7when6MidPt= CandleChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!), valueStackOpen.lastPredict7when6MidPt, valueStackClose.lastPredict7when6MidPt, valueStackHigh.lastPredict7when6MidPt, valueStackLow.lastPredict7when6MidPt)
+        var candleChartData_LastPredict7when6withDeltaGRWA= CandleChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!), valueStackOpen.lastPredict7when6withDeltaGRWA, valueStackClose.lastPredict7when6withDeltaGRWA, valueStackHigh.lastPredict7when6withDeltaGRWA, valueStackLow.lastPredict7when6withDeltaGRWA)
 
         candleChart_Src.valueList.add(candleChartData_Src)
         candleChart_GRWA.valueList.add(candleChartData_GRWA)
@@ -855,4 +856,12 @@ class GRWA {
         candleChart_LastPredict7when6MidPt.valueList.add(candleChartData_LastPredict7when6MidPt)
         candleChart_astPredict7when6withDeltaGRWA.valueList.add(candleChartData_LastPredict7when6withDeltaGRWA)
         logger.debug { "genCandleChartsAfterClose done"}
-    }}
+    }
+    object DateUtils {
+        @JvmStatic
+        fun toSimpleString(date: Date) : String {
+            val format = SimpleDateFormat("yyyy-MM-dd")
+            return format.format(date)
+        }
+    }
+}

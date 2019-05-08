@@ -44,7 +44,7 @@ class GraphQLController() {
                 valueList: [LineChartData]
             }
             type LineChartData{
-                pindate: String
+                date: String
                 value: String
             }
             type CandleChartCollection{
@@ -55,7 +55,7 @@ class GraphQLController() {
                 valueList: [CandleChartData]
             }
             type CandleChartData{
-                pindate: String
+                date: String
                 open: String
                 close: String
                 high: String
