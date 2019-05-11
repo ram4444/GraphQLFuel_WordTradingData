@@ -50,6 +50,7 @@ class GRWA {
 
     //----------------Charts----------------------
 
+    var candleChart_All: CandleChart=CandleChart("All", mutableListOf<CandleChartData>())
     var candleChart_Src: CandleChart=CandleChart("Source", mutableListOf<CandleChartData>())
     var candleChart_GRWA: CandleChart=CandleChart("GRWA", mutableListOf<CandleChartData>())
     var candleChart_LastPredict7when6: CandleChart=CandleChart("LastPredict", mutableListOf<CandleChartData>())
@@ -791,11 +792,12 @@ class GRWA {
     fun getCandleChartsCollection() :CandleChartCollection {
         var candleChartCollection = CandleChartCollection(
                 listOf(
-                        candleChart_Src,
-                        candleChart_GRWA,
-                        candleChart_LastPredict7when6,
-                        candleChart_LastPredict7when6MidPt,
-                        candleChart_astPredict7when6withDeltaGRWA
+                        //candleChart_Src,
+                        //candleChart_GRWA,
+                        //candleChart_LastPredict7when6,
+                        //candleChart_LastPredict7when6MidPt,
+                        //candleChart_astPredict7when6withDeltaGRWA
+                        candleChart_All
                 )
         )
         return candleChartCollection
@@ -844,18 +846,35 @@ class GRWA {
 
     fun genCandleChartsAfterClose(valueStackOpen:ValueStack, valueStackClose:ValueStack, valueStackHigh:ValueStack, valueStackLow:ValueStack) {
 
-        var candleChartData_Src = CandleChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!), valueStackOpen.rowValue.srcValue, valueStackClose.rowValue.srcValue, valueStackHigh.rowValue.srcValue, valueStackLow.rowValue.srcValue)
-        var candleChartData_GRWA= CandleChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!), valueStackOpen.rowValue.GRWA, valueStackClose.rowValue.GRWA, valueStackHigh.rowValue.GRWA, valueStackLow.rowValue.GRWA)
-        var candleChartData_LastPredict7when6= CandleChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!), valueStackOpen.lastPredict7when6, valueStackClose.lastPredict7when6, valueStackHigh.lastPredict7when6, valueStackLow.lastPredict7when6)
-        var candleChartData_LastPredict7when6MidPt= CandleChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!), valueStackOpen.lastPredict7when6MidPt, valueStackClose.lastPredict7when6MidPt, valueStackHigh.lastPredict7when6MidPt, valueStackLow.lastPredict7when6MidPt)
-        var candleChartData_LastPredict7when6withDeltaGRWA= CandleChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!), valueStackOpen.lastPredict7when6withDeltaGRWA, valueStackClose.lastPredict7when6withDeltaGRWA, valueStackHigh.lastPredict7when6withDeltaGRWA, valueStackLow.lastPredict7when6withDeltaGRWA)
+        //var candleChartData_Src = CandleChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!), valueStackOpen.rowValue.srcValue, valueStackClose.rowValue.srcValue, valueStackHigh.rowValue.srcValue, valueStackLow.rowValue.srcValue)
+        //var candleChartData_GRWA= CandleChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!), valueStackOpen.rowValue.GRWA, valueStackClose.rowValue.GRWA, valueStackHigh.rowValue.GRWA, valueStackLow.rowValue.GRWA)
+        //var candleChartData_LastPredict7when6= CandleChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!), valueStackOpen.lastPredict7when6, valueStackClose.lastPredict7when6, valueStackHigh.lastPredict7when6, valueStackLow.lastPredict7when6)
+        //var candleChartData_LastPredict7when6MidPt= CandleChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!), valueStackOpen.lastPredict7when6MidPt, valueStackClose.lastPredict7when6MidPt, valueStackHigh.lastPredict7when6MidPt, valueStackLow.lastPredict7when6MidPt)
+        //var candleChartData_LastPredict7when6withDeltaGRWA= CandleChartData(DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!), valueStackOpen.lastPredict7when6withDeltaGRWA, valueStackClose.lastPredict7when6withDeltaGRWA, valueStackHigh.lastPredict7when6withDeltaGRWA, valueStackLow.lastPredict7when6withDeltaGRWA)
+        var candleChartData_All = CandleChartData(
+                DateUtils.toSimpleString(valueStackClose.rowValue.pinDate!!) ,
+                valueStackOpen.rowValue.srcValue,
+                valueStackClose.rowValue.srcValue,
+                valueStackHigh.rowValue.srcValue,
+                valueStackLow.rowValue.srcValue,
+                valueStackVolume.rowValue.srcValue,
+                valueStackOpen.lastPredict7when6MidPt,
+                valueStackClose.lastPredict7when6MidPt,
+                valueStackHigh.lastPredict7when6MidPt,
+                valueStackLow.lastPredict7when6MidPt,
+                valueStackOpen.rowValue.disperSrcPredictGRWAMidPtPcnt,
+                valueStackClose.rowValue.disperSrcPredictGRWAMidPtPcnt,
+                valueStackHigh.rowValue.disperSrcPredictGRWAMidPtPcnt,
+                valueStackLow.rowValue.disperSrcPredictGRWAMidPtPcnt
+        )
 
-        candleChart_Src.valueList.add(candleChartData_Src)
-        candleChart_GRWA.valueList.add(candleChartData_GRWA)
-        candleChart_LastPredict7when6.valueList.add(candleChartData_LastPredict7when6)
-        candleChart_LastPredict7when6MidPt.valueList.add(candleChartData_LastPredict7when6MidPt)
-        candleChart_astPredict7when6withDeltaGRWA.valueList.add(candleChartData_LastPredict7when6withDeltaGRWA)
-        logger.debug { "genCandleChartsAfterClose done"}
+        //candleChart_Src.valueList.add(candleChartData_Src)
+        //candleChart_GRWA.valueList.add(candleChartData_GRWA)
+        //candleChart_LastPredict7when6.valueList.add(candleChartData_LastPredict7when6)
+        //candleChart_LastPredict7when6MidPt.valueList.add(candleChartData_LastPredict7when6MidPt)
+        //candleChart_astPredict7when6withDeltaGRWA.valueList.add(candleChartData_LastPredict7when6withDeltaGRWA)
+        candleChart_All.valueList.add(candleChartData_All)
+        //logger.debug { "genCandleChartsAfterClose done"}
     }
     object DateUtils {
         @JvmStatic

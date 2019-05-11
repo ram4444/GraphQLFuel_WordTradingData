@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/controller/GraphQLController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/controller/GraphQLController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/logicinstance/GRWA.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/logicinstance/GRWA.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/CandleChartData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/CandleChartData.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/LineChartData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/LineChartData.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -33,65 +32,91 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/logicinstance/GRWA.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="807" column="135" selection-start-line="807" selection-start-column="135" selection-end-line="807" selection-end-column="135" />
-              <folding>
-                <element signature="e#35#262#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/CandleChartData.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/CandleChart.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/LineChartData.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/logicinstance/ListenerFuncGrouping.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/service/GRWAFrontendService.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="91" column="48" selection-start-line="91" selection-start-column="48" selection-end-line="91" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/kotlin/logicinstance/GRWA.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="279">
+                  <caret line="790" lean-forward="true" selection-start-line="790" selection-end-line="790" />
+                  <folding>
+                    <element signature="e#35#264#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/CandleChartCollection.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="84">
+                  <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+                  <folding>
+                    <element signature="e#40#81#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/CandleChart.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+                  <folding>
+                    <element signature="e#40#127#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/kotlin/controller/GraphQLController.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/LineChartData.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="84">
+                  <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+                  <folding>
+                    <element signature="e#40#127#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/kotlin/service/GRWAFrontendService.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="734">
+                  <caret line="119" column="58" selection-start-line="119" selection-start-column="58" selection-end-line="119" selection-end-column="58" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/CandleChartData.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="273">
+                  <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -141,11 +166,11 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/CandleChartCollection.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/logicinstance/ListenerFuncGrouping.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/CandleChart.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/controller/GraphQLController.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/service/GRWAFrontendService.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/CandleChartData.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/LineChartData.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/CandleChartData.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/logicinstance/GRWA.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/controller/GraphQLController.kt" />
       </list>
     </option>
   </component>
@@ -160,6 +185,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
@@ -228,7 +254,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -331,16 +356,24 @@
       <option name="project" value="LOCAL" />
       <updated>1557008068506</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix chart object to match the ReactStockChart">
+      <created>1557278466104</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557278466105</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="788" width="1920" height="1054" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="UI Designer" order="0" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.16613418" />
+      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.17092651" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.2603834" side_tool="true" weight="0.3995657" />
@@ -350,7 +383,7 @@
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Debug" order="8" sideWeight="0.73961663" visible="true" weight="0.60912055" />
+      <window_info active="true" anchor="bottom" id="Debug" order="8" sideWeight="0.73961663" visible="true" weight="0.29967427" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -366,7 +399,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit for GRWA Analysis Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit for GRWA Analysis Project" />
+    <MESSAGE value="Fix chart object to match the ReactStockChart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix chart object to match the ReactStockChart" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GraphQLFuel_WordTradingData.iml" />
@@ -502,16 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/CandleChartCollection.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding>
-            <element signature="e#40#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/LineChart.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -523,13 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4221">
           <caret line="226" column="33" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/controller/GraphQLController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-840">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -554,31 +571,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/CandleChart.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/logicinstance/ListenerFuncGrouping.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="42">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding>
+            <element signature="e#35#274#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/service/GRWAFrontendService.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="91" column="48" selection-start-line="91" selection-start-column="48" selection-end-line="91" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/CandleChartData.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="734">
+          <caret line="119" column="58" selection-start-line="119" selection-start-column="58" selection-end-line="119" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -586,16 +592,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+          <folding>
+            <element signature="e#40#127#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/CandleChart.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding>
+            <element signature="e#40#127#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/controller/GraphQLController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/CandleChartCollection.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding>
+            <element signature="e#40#81#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/logicinstance/GRWA.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="807" column="135" selection-start-line="807" selection-start-column="135" selection-end-line="807" selection-end-column="135" />
+        <state relative-caret-position="279">
+          <caret line="790" lean-forward="true" selection-start-line="790" selection-end-line="790" />
           <folding>
-            <element signature="e#35#262#0" expanded="true" />
+            <element signature="e#35#264#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/pojo/httpRtn/Chart/CandleChartData.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
         </state>
       </provider>
     </entry>
