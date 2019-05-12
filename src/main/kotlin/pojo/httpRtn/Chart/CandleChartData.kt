@@ -19,7 +19,7 @@ data class CandleChartData(
         val pdhigh: Float?,
         val pdlow: Float?,
         val pdopendisper: Float?,
-        val pdcloseisper: Float?,
-        val pdhighisper: Float?,
-        val pdlowisper: Float?
+        val pdclosedisper: Float?,
+        val pdhighdisper: Float?,
+        val pdlowdisper: Float?
 )

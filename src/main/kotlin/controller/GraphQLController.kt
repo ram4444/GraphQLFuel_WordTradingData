@@ -66,9 +66,9 @@ class GraphQLController() {
                 pdhigh: String
                 pdlow: String
                 pdopendisper: String
-                pdcloseisper: String
-                pdhighisper: String
-                pdlowisper: String
+                pdclosedisper: String
+                pdhighdisper: String
+                pdlowdisper: String
             }"""
 
     lateinit var fetchers: Map<String, List<Pair<String, DataFetcher<out Any>>>>
